@@ -1,0 +1,32 @@
+!!!
+%html
+  %head
+    %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
+    %meta{:name => "lang", :content => $lang}
+    %title Mailer Bootstrap
+    :css
+       /* Force Hotmail to display emails at full width */
+       /* Prevent Webkit and Windows Mobile platforms from changing default font sizes. */
+       body{ background-color: #000; margin: 0; padding: 0; width:100% !important; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;} .ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+        /* Force Outlook to provide a "view in browser" button. */
+       #outlook a{padding:0;}
+      img{display: block; height:auto; line-height:100%; outline:none; text-decoration:none;}
+      #backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+      table td {border-collapse: collapse;}
+      /* template dev specific */
+      h1,h2,h3,h4,h5,h6 {margin: 0; padding: 0;}
+
+  %body(bgcolor="#{$wrapper_bg}" style="margin: 0; padding: 0;")
+    %table#backgroundTable{table_attrs(:bgcolor => $wrapper_bg)}
+      = partial :_preheader
+      = partial :_header
+      %tr
+        %td{center}
+          = partial :'modules/_reminder_top'
+          %table{table_attrs(:width => $fix_width)}
+            %tr
+              %td{width(15)}
+              %td(style="#{font_attrs}"){td_attrs(:bgcolor => "#ffffff")}
+                = yield
+              %td(width="15")
+      = partial :_footer
