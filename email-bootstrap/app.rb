@@ -27,15 +27,17 @@ configure do
   $main_bg = "#ffffff"
   $wrapper_bg = "#000000"
   #layout
-  $default_width = $flex_width
   $fix_width = 590
   $flex_width = "100%"
-  $gutter_h = 15
-  $gutter_v = 15
-  $inner_width = $fix_width - ($gutter_h * 2)
+  $default_width = $flex_width
+  $gutter = 15
+  $gutter_h = $gutter
+  $gutter_v = $gutter
+  $inner_width = $fix_width - ($gutter * 2)
   #images
   $logo_height = 60
   $logo_width = 160
+  $img_dev_url = "http://placehold.it/"
   $img_def_dim = "200x200"
 end
 ####################################################################################################
