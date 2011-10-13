@@ -34,8 +34,9 @@ configure do
   $gutter_v = 15
   $inner_width = $fix_width - ($gutter_h * 2)
   #images
-  $logo_height= 60
-  $logo_width= 160
+  $logo_height = 60
+  $logo_width = 160
+  $img_def_dim = "200x200"
 end
 ####################################################################################################
 # Application routes

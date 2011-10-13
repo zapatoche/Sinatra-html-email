@@ -35,6 +35,7 @@ def img_attrs options = {}
     :alt => " ",
     :border => 0,
     :style => "display: block; max-width: 100%;",
+    :src => "http://placehold.it/#{$img_def_dim}",
     :width => $flex_width,
   }.merge options
 end
@@ -48,7 +49,7 @@ end
 def link_span_attrs options = {}
   opts = {
     :style => "color: #{$link_col};",
-  }
+  }.merge options
 end
 ####################################################################################################
 def cssize list
@@ -95,6 +96,13 @@ def img
 end
 def width value = '100%'
   {:width => value}
+end
+#cell
+def rowspan value = 1
+    {:rowspan => value}
+end
+def colspan value = 1
+    {:colspan => value}
 end
 #gutter cell
 def gutter_h

@@ -1,11 +1,16 @@
+- generic = true
 %tr
   %td{td_attrs(:align => 'center',  :role => 'banner')}
     %table{table_attrs(:width => $fix_width)}
-      - 2.times do
+      - unless generic
+        - 2.times do
+          %tr
+            = partial :'modules/_toc'
+      - else
         %tr
-          - 3.times do
-            %td{td_attrs(:bgcolor => "#ccc", :width => ($fix_width / 3))}
-              %a{:href => "/"}
-                %img{img_attrs(:src => "http://placehold.it/196x110")}/
+          %td{center, middle, colspan (3)}
+            %img{img_attrs(:width => $fix_width, :src => "http://www.partypoker.com/images/1/newsletter/main.jpg")}
+        %tr
+          = partial :'modules/_toc'
    
 
