@@ -24,6 +24,23 @@ def cssize list
 end
 ####################################################################################################
 #tables attributes helper
+def reset options = {}
+  {
+    :margin => 0,
+    :padding => 0,
+  }.merge options
+end
+def body_style options = {}
+  {
+    :margin => 0,
+    :padding => 0,
+    :bgcolor => $wrapper_bg,
+    :text => $copy_col,
+    :link => $link_col,
+    :vlink => $link_visited,
+    :alink => $link_active,
+  }.merge options
+end
 def table_attrs options = {}
   {
     :bgcolor => $main_bg,
@@ -43,7 +60,7 @@ def img_attrs options = {}
   {
     :alt => " ",
     :border => 0,
-    :style => "display: block; max-width: 100%;",
+    :style => "display: block; max-width: 100%; -ms-interpolation-mode: bicubic;",
     :src => "http://placehold.it/#{$img_def_dim}",
     :width => $flex_width,
   }.merge options
@@ -63,6 +80,7 @@ end
 ####################################################################################################
 #quick helpers
 # most used attributes
+
 
 #align
 def center

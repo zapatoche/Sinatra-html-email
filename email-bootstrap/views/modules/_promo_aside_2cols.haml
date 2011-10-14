@@ -7,7 +7,7 @@
       %a{link_attrs}
         %img{img_attrs, :src => "#{$img_dev_url}#{($inner_width - $gutter) / 2}x250"}
 
-    %td{gutter_h}
+    = partial :'modules/_gutter_h'
 
     %td{td_attrs, :style => font_attrs}
       :markdown
