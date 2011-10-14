@@ -97,10 +97,12 @@ def width value = '100%'
   {:width => value}
 end
 #cell
-def rowspan value = 1
+#set default value to 2 abs there is no point to add a (col|row)span on a single
+#cell. Remember to set the correct span value to maximize compatibility
+def rowspan value = 2
     {:rowspan => value}
 end
-def colspan value = 1
+def colspan value = 2
     {:colspan => value}
 end
 #gutter cell
