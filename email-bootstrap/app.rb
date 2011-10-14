@@ -24,13 +24,16 @@ configure do
   $copy_inv_col = "#ffffff" 
   $link_col = "blue"
   $link_inv_col = "#ffffff"
+  $link_hover = $brand_col
+  $link_visited = "purple"
+  $link_active = $brand_col
   $main_bg = "#ffffff"
   $wrapper_bg = "#000000"
   #layout
   $fix_width = 590
   $flex_width = "100%"
   $default_width = $flex_width
-  $gutter = 15
+  $gutter = 20
   $gutter_h = $gutter
   $gutter_v = $gutter
   $inner_width = $fix_width - ($gutter * 2)

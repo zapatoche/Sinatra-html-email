@@ -13,6 +13,16 @@ def font_attrs options = {}
   cssize opts
 end
 ####################################################################################################
+def cssize list
+  #convert key => value into css style key: value;
+  output = []
+  list.each do |key,value|
+    attr = key.to_s.split("_").join("-")
+    output << "#{attr}: #{value};"
+  end
+  return output
+end
+####################################################################################################
 #tables attributes helper
 def table_attrs options = {}
   {
@@ -22,7 +32,6 @@ def table_attrs options = {}
     :cellspacing => 0,
     :width => $default_width,
   }.merge options
-  #turn list into html attributes
 end
 def td_attrs options = {}
   {
@@ -50,16 +59,6 @@ def link_span_attrs options = {}
   opts = {
     :style => "color: #{$link_col};",
   }.merge options
-end
-####################################################################################################
-def cssize list
-  #convert key => value into css style key: value;
-  output = []
-  list.each do |key,value|
-    attr = key.to_s.split("_").join("-")
-    output << "#{attr}: #{value};"
-  end
-  return output
 end
 ####################################################################################################
 #quick helpers

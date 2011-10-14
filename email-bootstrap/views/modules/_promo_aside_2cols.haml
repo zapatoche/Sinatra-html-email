@@ -1,7 +1,7 @@
 %br/
-%table{table_attrs}
+%table{table_attrs, :style => "border-top: 1px solid #cccccc;"}
   %tr
-    %td{gutter_v, :style => "border-top: 1px solid #cccccc;", :colspan => 3}
+    %td{gutter_v, :colspan => 3}
   %tr
     %td{td_attrs, :width => ($inner_width - $gutter) / 2}
       %a{link_attrs}
@@ -9,7 +9,7 @@
 
     %td{gutter_h}
 
-    %td{td_attrs}
+    %td{td_attrs, :style => font_attrs}
       :markdown
         ### Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.  
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
