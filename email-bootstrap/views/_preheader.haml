@@ -4,7 +4,7 @@
       %tr
         %td{table_attrs(:bgcolor => $wrapper_bg, :width => $logo_width)}(style="#{font_attrs(:color => $brand_col)}")
           %a{link_attrs}
-            %img{img_attrs(:src => "http://www.partypoker.com/strongmail/partypoker.com/images/logo.jpg", :width => $logo_width, :height => $logo_height, :alt => "www.partypoker.com")}/
+            %img{img_attrs(:src => "#{$img_dev_url}/#{$logo_width}x#{$logo_height}", :width => $logo_width, :height => $logo_height, :alt => "www.partypoker.com")}/
         %td{td_attrs(:align => "center", :valign => "middle", :role => "heading", :style => font_attrs(:font_size => "16px", :color => $copy_inv_col))}
           %a{link_attrs(:style => "color: #{$link_inv_col};")}
             %span{link_span_attrs(:style => "color: #{$link_inv_col};")}
