@@ -37,11 +37,16 @@ configure do
   $gutter_h = $gutter
   $gutter_v = $gutter
   $inner_width = $fix_width - ($gutter * 2)
+  #columns
+  $col_1 = $fix_width
+  $col_2 = ($inner_width - $gutter_h) / 2
+  $col_3 = ($inner_width - ($gutter_h * 2)) / 3
   #images
   $logo_height = 60
   $logo_width = 160
   $img_dev_url = "http://placehold.it/"
   $img_def_dim = "200x200"
+  $img_rythm = "110"
 end
 ####################################################################################################
 # Application routes
