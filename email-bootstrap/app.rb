@@ -45,6 +45,14 @@ configure do
 end
 ####################################################################################################
 # Application routes
+get '/' do
+  redirect '/proto'
+end
+
+get '/proto' do
+  haml :test_email, :layout => :'layouts/application'
+end
+
 get '/promo-aside' do
   haml :index, :layout => :'layouts/application'
 end
