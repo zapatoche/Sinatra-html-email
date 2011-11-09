@@ -24,11 +24,19 @@ default to build safer emails structure faster
 
 ##Quirks to know
 
+#### layout
+
 - Avoid use of complex colspan to create multicolumns layout, use nested table instead (Outlook quirks)
 - Avoid hr/ to separate section (difficult to style), add border to section table elements
 - Break code into differents table modules, make it easier to style and test
 - Add font style to every table cells
 - avoid semantic markup for copy, elements need to be styled one by one to ensure margins/paddings/etc... works. It's easier to style a whole block of copy in a table cell and space copy with br/ 
+
+#### border styles
+- border styles don't show on empty tables? (re-test)
+- border styles nedd to expanded (no shorthand css) on table cells - don't
+  show in lotus notes < 8, Hotmail Firefox etc..
+- border style can be written with shorthand on table elements
 
 
 ##references
