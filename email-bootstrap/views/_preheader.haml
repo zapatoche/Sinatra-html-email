@@ -1,5 +1,5 @@
 %tr
-  %td.preheader{td_attrs(:align => 'center')}
+  %td.preheader{td_attrs(:align => 'center', :style => "border-bottom: 1px solid #{$brand_col}")}
     %table#pre-header{table_attrs(:bgcolor => $wrapper_bg, :width => $fix_width)}
       %tr
         %td{td_attrs(:bgcolor => $wrapper_bg, :width => $logo_width)}(style="#{font_attrs(:color => $brand_col)}")
@@ -9,6 +9,3 @@
           %a{link_attrs(:style => "color: #{$link_inv_col};")}
             %span{link_span_attrs(:style => "color: #{$link_inv_col};")}
               test
-%tr
-  %td{height(1), :bgcolor => $brand_col}
-
