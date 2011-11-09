@@ -17,7 +17,7 @@
           %table{table_attrs(:width => $fix_width)}
             %tr
               = partial :'modules/_gutter_h'
-              %td(style="#{font_attrs}"){td_attrs(:bgcolor => "#ffffff")}
+              %td(style="#{font_attrs}"){td_attrs(:bgcolor => "#ffffff",  :width => $inner_width) }
                 = yield
                 %br/
               = partial :'modules/_gutter_h'

@@ -132,3 +132,6 @@ def gutter_v
   {:height => $gutter_v}
 end
 
+def height value
+  {:height => value}
+end

@@ -29,6 +29,7 @@ configure do
   $link_active = $brand_col
   $main_bg = "#ffffff"
   $wrapper_bg = "#000000"
+  $brand_cta_color = "#ffbb00"
   #layout
   $fix_width = 590
   $flex_width = "100%"
