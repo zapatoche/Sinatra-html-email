@@ -1,15 +1,20 @@
 %br/
-%table{table_attrs(:style => "border-top: 1px solid #cccccc;", :width => $inner_width)}
-  %tr
-    %td{gutter_v, colspan(3)}
+= partial :'modules/_hr'
+%table{table_attrs(:width => $inner_width)}
   %tr
     %td{td_attrs(:width => $col_2), :style => font_attrs}
       %a{link_attrs}
-        %img{img_attrs(:src => "#{$img_dev_url}#{$col_2}x#{$img_rythm}")}
+        %table{table_attrs, width($col_2)}
+          %tr
+            %td
+              %img{img_attrs(:src => "#{$img_dev_url}#{$col_2}x#{$img_rythm}", :width => $col_2, :height => $img_rythm)}
       = partial :'modules/_copy_block' 
     %td{gutter_h}
     %td{td_attrs(:width => $col_2), :style => font_attrs}
       %a{link_attrs}
-       %img{img_attrs(:src => "#{$img_dev_url}#{$col_2}x#{$img_rythm}")}
+        %table{table_attrs, width($col_2)}
+          %tr
+            %td
+              %img{img_attrs(:src => "#{$img_dev_url}#{$col_2}x#{$img_rythm}", :width => $col_2, :height => $img_rythm)}
       = partial :'modules/_copy_block' 
 

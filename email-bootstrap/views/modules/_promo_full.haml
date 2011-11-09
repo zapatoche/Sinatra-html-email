@@ -2,6 +2,9 @@
 %table{table_attrs, :width => $inner_width}
   %tr
     %td{td_attrs, :style => font_attrs}
-      %img{img_attrs, :alt => "promo",:src => "http://www.placehold.it/#{$inner_width}x220"}/
+      %table{table_attrs, width($inner_width)}
+        %tr
+          %td
+            %img{img_attrs, :alt => "promo",:src => "http://www.placehold.it/#{$inner_width}x220", :width => $inner_width, :height => ($img_rythm * 2)}/
       = partial :'modules/_copy_block' 
 

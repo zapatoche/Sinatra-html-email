@@ -132,6 +132,15 @@ def gutter_v
   {:height => $gutter_v}
 end
 
+def width value
+  {:width => value}
+end
+
 def height value
   {:height => value}
+end
+
+def hr_style
+  # "border-top-width: 1px; border-top-style: solid; border-top-color: #{$hr_color};"
+  "border-top: 1px solid #{$hr_color};"
 end

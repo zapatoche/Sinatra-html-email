@@ -38,6 +38,9 @@ default to build safer emails structure faster
   show in lotus notes < 8, Hotmail Firefox etc..
 - border style can be written with shorthand on table elements
 
+#### paddings
+- Aol Explorer, Gmail Explorer, Hotmail Explorer, Yahoo Explorer, Lotus Notes, Outlook < 2007 have no support for padding style on `<td>`
+
 
 ##references
 
@@ -45,4 +48,5 @@ default to build safer emails structure faster
 - <http://msdn.microsoft.com/en-us/library/aa338201.aspx>
 - <http://htmlemailboilerplate.com/>
 - <http://www.clickz.com/clickz/column/1800179/html-code-affects-email-deliverability>
+- <http://www.campaignmonitor.com/css/>
 - to be continued ...

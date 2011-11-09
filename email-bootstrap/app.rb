@@ -30,6 +30,7 @@ configure do
   $main_bg = "#ffffff"
   $wrapper_bg = "#000000"
   $brand_cta_color = "#ffbb00"
+  $hr_color = "#cccccc"
   #layout
   $fix_width = 590
   $flex_width = "100%"
@@ -47,7 +48,7 @@ configure do
   $logo_width = 160
   $img_dev_url = "http://placehold.it/"
   $img_def_dim = "200x200"
-  $img_rythm = "110"
+  $img_rythm = 110
 end
 ####################################################################################################
 # Application routes
