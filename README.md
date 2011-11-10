@@ -34,7 +34,7 @@ use `<hr>` pattern ?)
 - Avoid hr/ to separate section (difficult to style), add border to section table elements
 - Break code into different table modules, make it easier to style and test
 - Add font style to every table cells
-- avoid semantic markup for copy, elements need to be styled one by one to ensure margins/paddings/etc. work. It's easier to style a whole block of copy in a table cell and space copy with br/ 
+- avoid semantic markup for copy, elements need to be styled one by one to ensure margins/paddings/etc work. It's easier to style a whole block of copy in a table cell and space copy with br/ 
 
 #### border styles
 - border styles don't show on empty tables? (re-test)

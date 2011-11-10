@@ -144,3 +144,4 @@ def hr_style
   # "border-top-width: 1px; border-top-style: solid; border-top-color: #{$hr_color};"
   "border-top: 1px solid #{$hr_color};"
 end
+
