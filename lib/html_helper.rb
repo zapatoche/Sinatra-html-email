@@ -19,7 +19,7 @@ def cssize list
     attr = key.to_s.split("_").join("-")
     output << "#{attr}: #{value};"
   end
-  return output
+  return output.join(" ")
 end
 ####################################################################################################
 #tables attributes helper

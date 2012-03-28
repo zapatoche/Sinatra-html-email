@@ -15,7 +15,7 @@ configure do
   #font
   $font_family = "Arial, Helvetica, sans-serif"
   $font_size = "13px"
-  $font_weight = "bold"
+  $font_weight = "normal"
   $line_height ="1.4"
   #colors
   $brand_col = "#1d6d0a"
