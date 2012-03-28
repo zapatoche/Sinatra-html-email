@@ -1,13 +1,12 @@
-####################################################################################################
+###################################################################################################
 #font-style helper
 def font_attrs options = {}
-  #defaults
-  opts = {
+ opts =  {
     :color => $copy_col,
-    :font_family => "Arial, Helvetica, sans-serif",
-    :font_size => "13px",
-    :font_weight => "normal",
-    :line_height => "1.4"
+    :font_family => $font_family,
+    :font_size => $font_size,
+    :font_weight => $font_weight,
+    :line_height => $line_height
   }.merge options
   #turn options into css list
   cssize opts
@@ -99,7 +98,7 @@ def top
   {:valign => 'top'}
 end
 def bottom
-  {:valign => bottom}
+  {:valign => 'bottom'}
 end
 #img
 def img

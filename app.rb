@@ -1,7 +1,5 @@
 %w{rubygems sinatra haml sass kramdown}.each {|libs| require libs}
-# Helpers
-require './lib/render_partial'
-require './lib/html_helper'
+
 # Set Sinatra variables
 set :app_file, __FILE__
 set :root, File.dirname(__FILE__)
@@ -18,6 +16,7 @@ configure do
   $font_family = "Arial, Helvetica, sans-serif"
   $font_size = "13px"
   $font_weight = "bold"
+  $line_height ="1.4"
   #colors
   $brand_col = "#1d6d0a"
   $copy_col = "#000000"
@@ -44,31 +43,21 @@ configure do
   $col_2 = ($inner_width - $gutter_h) / 2
   $col_3 = ($inner_width - ($gutter_h * 2)) / 3
   #images
-  $logo_height = 60
+  $logo_height = 75
   $logo_width = 160
   $img_dev_url = "http://placehold.it/"
   $img_def_dim = "200x200"
   $img_rythm = 110
 end
+
+# Helpers
+require './lib/render_partial'
+require './lib/html_helper'
+
 ####################################################################################################
 # Application routes
+
 get '/' do
-  redirect '/proto'
-end
-
-get '/proto' do
-  haml :test_email, :layout => :'layouts/application'
-end
-
-get '/promo-aside' do
-  haml :index, :layout => :'layouts/application'
-end
-
-get '/promo-footer' do
-  haml :promo_footer, :layout => :'layouts/application'
-end
-
-get '/proto-mailer-001' do
   haml :proto_mailer_001, :layout => :'layouts/pg-tpl'
 end
 
