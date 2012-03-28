@@ -14,7 +14,7 @@ configure do
   $lang = "en"
   #font
   $font_family = "Arial, Helvetica, sans-serif"
-  $font_size = "13px"
+  $font_size = "12px"
   $font_weight = "normal"
   $line_height ="1.4"
   #colors
@@ -44,10 +44,12 @@ configure do
   $col_3 = ($inner_width - ($gutter_h * 2)) / 3
   #images
   $logo_height = 75
-  $logo_width = 160
+  $logo_width = 590
   $img_dev_url = "http://placehold.it/"
   $img_def_dim = "200x200"
   $img_rythm = 110
+  #links
+  $test_link = "http://change.me"
 end
 
 # Helpers

@@ -66,7 +66,7 @@ def img_attrs options = {}
 end
 def link_attrs options = {}
   {
-    :href => "/",
+    :href => $test_link,
     :style => "color: #{$link_col}",
     :target => '_blank',
   }.merge options
