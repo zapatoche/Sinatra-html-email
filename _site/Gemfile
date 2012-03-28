@@ -1,0 +1,10 @@
+source "http://rubygems.org"
+
+gem "rake"
+gem "sinatra"
+gem "shotgun", "~> 0.9"
+gem "haml", "~> 3.1.1"
+gem "sass", "~> 3.1.1"
+gem "compass", "~> 0.11.1"
+gem "grid-coordinates", "~> 1.1.4"
+gem "kramdown"

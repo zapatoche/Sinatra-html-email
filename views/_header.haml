@@ -1,0 +1,14 @@
+- generic = true
+%tr
+  %td{td_attrs(:align => 'center',  :role => 'banner')}
+    %table{table_attrs(:width => $fix_width)}
+      - unless generic
+        - 2.times do
+          %tr
+            = partial :'modules/_toc'
+      - else
+        %tr
+          %td{center, middle}
+            %img{img_attrs(:src => "#{$img_dev_url}/#{$fix_width}x110")}
+
+

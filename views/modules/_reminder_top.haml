@@ -1,0 +1,12 @@
+%table{table_attrs, :width => $fix_width}
+  %tr
+    %td{center}
+      %table#reminder-top{table_attrs(:bgcolor => $brand_cta_color, :width => $fix_width, :style => "padding: 5px 0;")}
+        %tr
+          %td{gutter_h} &nbsp;
+          %td{td_attrs(:role => "heading", :style => font_attrs, :width => $inner_width)}
+            %a{link_attrs(:style => "color: #{$copy_col};", :role => 'link')}
+              %strong
+                Check your points
+          = partial :'modules/_gutter_h'
+
