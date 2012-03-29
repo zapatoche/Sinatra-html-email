@@ -63,7 +63,6 @@ def img_attrs options = {}
     :border => 0,
     :style => "display: block; max-width: 100%; -ms-interpolation-mode: bicubic;",
     :src => "http://placehold.it/#{$img_def_dim}",
-    :width => $flex_width,
   }.merge options
 end
 def link_attrs options = {}
