@@ -30,6 +30,8 @@ configure do
   $wrapper_bg = "#000000"
   $brand_cta_color = "#ffbb00"
   $hr_color = "#cccccc"
+  $border_primary_color = "#e0e0e0"
+  $border_primary = "1px solid #{$border_primary_color}"
   #layout
   $fix_width = 590
   $flex_width = "100%"
