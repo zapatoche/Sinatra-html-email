@@ -19,6 +19,7 @@ configure do
   $line_height ="1.4"
   #colors
   $brand_col = "#1d6d0a"
+  $brand_highlight = "#ffffff"
   $copy_col = "#000000"
   $copy_inv_col = "#ffffff" 
   $link_col = "blue"
