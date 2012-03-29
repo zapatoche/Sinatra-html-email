@@ -18,7 +18,7 @@
           %table.body{table_attrs, width: $fix_width}
             %tr
               %td{center}
-                %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", alt: " "}
+                %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", style: "display: block;"}
                 -# %img{src: "img/spacer.gif", width: "1", height: "20", alt: " "}
                 %table{table_attrs, width: ($fix_width - 50)}
                   %tr
@@ -30,6 +30,8 @@
                     %td{td_attrs, style: "#{font_attrs}"}
                       = yield
                       = partial :_cta
-      = partial :_footer
+                %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", style: "display: block;"}
+          %br/
+          = partial :_footer
 
 
