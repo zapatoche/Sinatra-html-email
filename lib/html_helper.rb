@@ -8,6 +8,7 @@ def font_attrs options = {}
     :font_weight => $font_weight,
     :line_height => $line_height,
     'mso-line-height-rule' => "exactly",
+    '-webkit-text-size-adjust' => "none",
   }.merge options
   #turn options into css list
   cssize opts
