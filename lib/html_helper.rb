@@ -6,7 +6,8 @@ def font_attrs options = {}
     :font_family => $font_family,
     :font_size => $font_size,
     :font_weight => $font_weight,
-    :line_height => $line_height
+    :line_height => $line_height,
+    'mso-line-height-rule' => "exactly",
   }.merge options
   #turn options into css list
   cssize opts
