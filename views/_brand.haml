@@ -1,11 +1,14 @@
-%table.brand{table_attrs(:bgcolor => $wrapper_bg, :width => $fix_width)}
+%table.brand{table_attrs(bgcolor: $wrapper_bg, width: $fix_width)}
   %tr
-    %td{:bgcolor => $wrapper_bg, :height => "5"}
-      %img{:src => "img/spacer.gif" }
+    %td{bgcolor: $wrapper_bg, height: "5"}
+      -# %img{src: "img/spacer.gif" }
+      %img{src: "#{$img_dev_url}/1x1/", height: "5", width: "1"  }
   %tr
-    %td{td_attrs, :bgcolor => $brand_color, :width => $fix_width}
+    %td{td_attrs, bgcolor: $brand_color, width: $fix_width}
       %a{link_attrs}
-        %img{img_attrs(:src => "img/brand-logo.jpg", :alt => "www.partypoker.com")}/
+        -# %img{img_attrs(src: "img/brand-logo.jpg", alt: "www.partypoker.com", width: "")}/
+        %img{img_attrs(src: "#{$img_dev_url}/590x75/", alt: "www.partypoker.com", width: "")}/
   %tr
-    %td{:bgcolor => "#fff", :height => "5"}
-      %img{:src => "img/spacer.gif" }
+    %td{bgcolor: "#fff", height: "5"}
+      %img{src: "#{$img_dev_url}/1x1/", height: "5", width: "1"}
+      -# %img{src: "img/spacer.gif" }

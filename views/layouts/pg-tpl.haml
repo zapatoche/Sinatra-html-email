@@ -1,24 +1,25 @@
 !!!
 %html
   %head
-    %meta{:'http-equiv' => "Content-Type", :content => "text/html; charset=utf-8"}
-    %meta{:name => "lang", :content => $lang}
+    %meta{:'http-equiv' => "Content-Type", content: "text/html; charset=utf-8"}
+    %meta{name: "lang", content: $lang}
     %title Mailer Bootstrap
     :css
       body, .ReadMsgBody, .ExternalClass  { width: 100% !important; } body { -webkit-text-size-adjust: none; -ms-text-size-adjust: none; margin: 0; padding: 0; } img { display: block; line-height: 100%; outline: none; text-decoration: none; } a img { border:none; } #bodyImpostor { margin: 0; padding: 0; width: 100% !important; } p { margin: 1em 0; } h1, h2, h3, h4, h5, h6 { color: "#{$copy_col}" !important;  line-height: 100% !important; margin-top: 0 !important;} a { color: "#{$link_col}" } a:hover { color: "#{$link_hover}" } a:active { color: "#{$link_active}" } a:visited { color: "#{$link_visited}" } table td { border-collapse: collapse;} .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: "#{$link_col}"; text-decoration: none !important; border-bottom: none !important; background: none !important; } #outlook a { padding: 0; }
 
   %body{body_style}
-    %table#bodyImpostor{table_attrs, :bgcolor => $wrapper_bg}
+    %table#bodyImpostor{table_attrs, bgcolor: $wrapper_bg}
       %tr
         %td{center}
           / header
           = partial :_header
           / body wrapper
-          %table.body{table_attrs, :width => $fix_width}
+          %table.body{table_attrs, width: $fix_width}
             %tr
               %td{center}
-                %img{src: "img/spacer.gif", width: "1", height: "20"}
-                %table{table_attrs, :width => ($fix_width - 50)}
+                %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", alt: " "}
+                -# %img{src: "img/spacer.gif", width: "1", height: "20", alt: " "}
+                %table{table_attrs, width: ($fix_width - 50)}
                   %tr
                     %td{td_attrs, style: font_attrs(font_size: "18px")}
                       %a{link_attrs, style: "color: red;"}
