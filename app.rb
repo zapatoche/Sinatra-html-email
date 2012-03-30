@@ -34,7 +34,8 @@ configure do
   $brand_cta_color = "#ffbb00"
   $hr_color = "#cccccc"
   # $border_primary_color = "#e0e0e0"
-  $border_primary_color = "LightGray"
+  # $border_primary_color = "LightGray"
+  $border_primary_color = "#D3D3D3"
   $border_primary = "1px solid #{$border_primary_color}"
   #layout
   $fix_width = 590
