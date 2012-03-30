@@ -1,4 +1,4 @@
-%table.newsletter{table_attrs, bgcolor: "#f0f0f0", style: "border: 1px solid #{$border_primary_color}"}
+%table.newsletter{table_attrs, bgcolor: "#f0f0f0", style: "border-top: 1px solid #{$border_primary_color}"}
   %tr
     %td{center}
       %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", style: "display: block;"}
@@ -6,6 +6,11 @@
       = partial :_header_module
       - 3.times do
         = partial :_news_module
+
+%table.newsletter{table_attrs, bgcolor: "#f0f0f0", style: "border-top: 1px solid #{$border_primary_color}"}
+  %tr
+    %td{center}
+      %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", style: "display: block;"}
       /other
       = partial :_header_module
       - 2.times do
