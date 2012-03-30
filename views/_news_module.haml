@@ -6,12 +6,12 @@
           more info
     %td{width: "20"}
       %img{src: "#{$img_dev_url}/1x1/", width: "20", height: "1"}
-    %td{td_attrs, style: font_attrs, width: $fix_width - (130 - 50 - 20)}
-      %table{table_attrs, bgcolor: $newsletter_bg_color}
+    %td{td_attrs, style: font_attrs, width: ($fix_width - 200)}
+      %table{table_attrs, bgcolor: $newsletter_bg_color, width: ($fix_width - 200)}
         %tr
           %td
-            %strong{style: "font-size: 14px, font-weight: bold; margin: 0;"}
-              %a{link_attrs}
+            %strong{}
+              %a{link_attrs, style: "font-size: 14px, font-weight: bold;"}
                 Start qualifying for the WSOP*
               %span{style: "font-weight: normal"}
                 10th—25th April
