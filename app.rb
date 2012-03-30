@@ -21,6 +21,7 @@ configure do
   $brand_col = "#1d6d0a"
   $brand_highlight_primary = "#ffffff"
   $brand_highlight_secondary = "#ff0000"
+  $newsletter_bg_color = "#f0f0f0"
   $copy_col = "#000000"
   $copy_inv_col = "#ffffff" 
   $link_col = "blue"

@@ -2,6 +2,12 @@
   %tr
     %td{center}
       %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", style: "display: block;"}
+      /monthly
+      = partial :_header_module
       - 3.times do
+        = partial :_news_module
+      /other
+      = partial :_header_module
+      - 2.times do
         = partial :_news_module
       %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", style: "display: block;"}
