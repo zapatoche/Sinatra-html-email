@@ -26,6 +26,7 @@ configure do
   $newsletter_bg_color = "#f0f0f0"
   $copy_col = "#000000"
   $copy_inv_col = "#ffffff" 
+  $cta_link_col = "#ffffff"
   $link_col = "blue"
   $link_inv_col = "#ffffff"
   $link_hover = $brand_col
