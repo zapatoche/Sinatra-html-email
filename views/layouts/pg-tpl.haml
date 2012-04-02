@@ -18,7 +18,7 @@
           %table.body{table_attrs, width: $fix_width}
             %tr
               %td{center}
-                %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", style: "display: block;"}
+                %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "20", style: "display: block;"}
                 -# %img{src: "img/spacer.gif", width: "1", height: "20", alt: " "}
                 %table{table_attrs, width: ($fix_width - ($gutter * 2))}
                   %tr
@@ -30,7 +30,7 @@
                     %td{td_attrs, style: "#{font_attrs}"}
                       = yield
                       = partial :_cta
-                %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", style: "display: block;"}
+                %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "20", style: "display: block;"}
                 = partial :_newsletter
           %br/
           = partial :_footer

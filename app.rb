@@ -52,7 +52,7 @@ configure do
   #images
   $logo_height = 75
   $logo_width = 590
-  $img_dev_url = "http://placehold.it/"
+  $img_dev_url = "http://www.partypoker.com/content/dam/mailers/prototype/"
   $img_def_dim = "200x200"
   $img_rythm = 110
   #links
