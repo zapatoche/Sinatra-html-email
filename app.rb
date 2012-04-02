@@ -19,8 +19,10 @@ configure do
   $line_height ="1.4"
   #colors
   $brand_col = "#1d6d0a"
-  $brand_highlight_primary = "#ffffff"
-  $brand_highlight_secondary = "#ff0000"
+  $brand_highlight_primary = "#e73f40"
+  $brand_highlight_secondary = "#ffffff"
+  $brand_cta_color = "#ffbb00"
+  $brand_link_highlight = $brand_highlight_primary
   $newsletter_bg_color = "#f0f0f0"
   $copy_col = "#000000"
   $copy_inv_col = "#ffffff" 
@@ -31,7 +33,6 @@ configure do
   $link_active = $brand_col
   $main_bg = "#ffffff"
   $wrapper_bg = "#000000"
-  $brand_cta_color = "#ffbb00"
   $hr_color = "#cccccc"
   $border_primary_color = "#D3D3D3"
   $border_primary = "1px solid #{$border_primary_color}"
@@ -39,7 +40,7 @@ configure do
   $fix_width = 590
   $flex_width = "100%"
   $default_width = $flex_width
-  $gutter = 20
+  $gutter = 25
   $gutter_h = $gutter
   $gutter_v = $gutter
   $inner_width = $fix_width - ($gutter * 2)
