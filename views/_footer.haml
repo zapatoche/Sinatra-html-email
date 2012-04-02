@@ -2,10 +2,10 @@
   %tr
     %td{center}
       %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "20", style: "display: block;"}
-      %table.account{bgcolor: "#101010", border: "0", cellpadding: "2", cellspacing: "0", width: $fix_width - 50}
+      %table.account{table_attrs, bgcolor: "#101010", width: $fix_width - 50}
         %tr
-          %td{left, middle}
-            %table.account{bgcolor: "#101010", border: "0", cellpadding: "2", cellspacing: "0", width: ""}
+          %td{left, middle, width: "440"}
+            %table.account{table_attrs, bgcolor: "#101010"}
               %tr
                 %td{left, middle, style: font_attrs(font_size: "10px", color: "#ffffff")}
                   %strong Account name:
@@ -13,25 +13,32 @@
                   %a{href: "https://secure.partyaccount.com/poker/index.htm", style: "color: #ffffff", target: "_blank"}
                     %span{style: "color: #ffffff;"} Your account
               %tr
+                %td{height: "5"}
+              %tr
                 %td{left, middle, style: font_attrs(font_size: "10px", color: "#ffffff")}
                   %strong Your email address:
                   \##F_EMAIL## -
                   %a{href: "##F_UNSUBSCRIBE_URL##&amp;productID=POKER&amp;brandID=PARTY&amp;LANG_ID=en_US", style: "color: #ffffff", target: "_blank"}
                     %span{style: "color: #ffffff;"} Update your email preferences
               %tr
+                %td{height: "5"}
+              %tr
                 %td{left, middle, style: font_attrs(font_size: "10px", color: "#ffffff")}
                   Restrictions apply to all our promotions and bonus offers -
                   %a{href: "https://secure.partyaccount.com/about/standard_terms_conditions_s.do?productID=POKER&amp;brandID=PARTY&amp;LANG_ID=en", style: "color: #ffffff", target: "_blank"}
                     %span{style: "color: #ffffff;"} Terms and conditions
               %tr
+                %td{height: "5"}
+              %tr
                 %td{left, middle, style: font_attrs(font_size: "10px", color: "#ffffff")}
                   For assistance, contact our 24/7 -
                   %a{href: "http://www.partypoker.com/help/", style: "color: #ffffff", target: "_blank"}
                     %span{style: "color: #ffffff;"} Customer Care Team
-          %td{right, middle}
+
+          %td{right, middle, width: "50"}
             %a{link_attrs}
               %img{img_attrs, src: "http://www.partycasino.com/etc/designs/common/images/footer/ft_over-18.png", width: "41", height: "40"}
-          %td{right, middle}
+          %td{right, middle, width: "60"}
             %a{link_attrs}
               %img{img_attrs, src:  "http://www.partycasino.com/etc/designs/common/images/footer/ft_know-your-limits.png", width: "52", height: "40"}
 
