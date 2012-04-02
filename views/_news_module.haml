@@ -1,21 +1,24 @@
-%table{table_attrs, bgcolor: "#f0f0f0", width: $fix_width - 50 }
+%table{table_attrs, bgcolor: "#f0f0f0", width: $fix_width - ($gutter * 2) }
   %tr
-    %td{td_attrs, width: "150"}
-      %img{img_attrs, src: "#{$img_dev_url}/130x80/", width: "130", height: "80", style: "border: solid 2px #{$border_primary_color};"}
-    %td{td_attrs, style: font_attrs}
-      %table{table_attrs, bgcolor: $newsletter_bg_color}
+    %td{td_attrs, center, width: "130", style: font_attrs}
+      %a{link_attrs}
+        %img{img_attrs, src: "#{$img_dev_url}/130x80/", width: "130", height: "80", style: "border: solid 2px #{$border_primary_color};"}
+          more info
+    %td{width: "20"}
+      %img{src: "#{$img_dev_url}/1x1/", width: "20", height: "1"}
+    %td{td_attrs, style: font_attrs, width: ($fix_width - 200)}
+      %table{table_attrs, bgcolor: $newsletter_bg_color, width: ($fix_width - 200)}
         %tr
-          %td
-            %strong{style: "font-size: 14px, font-weight: bold; margin: 0;"}
-              %a{link_attrs}
+          %td{td_attrs, style: font_attrs}
+            %strong{style: "font-weight: bold;"}
+              %a{link_attrs, style: "color: #{$link_col}"}
                 Start qualifying for the WSOP*
-              %span{style: "font-weight: normal"}
-                10th—25th April
+              %br/
+              10th—25th April
         %tr
           %td{height: "5px"}
             / not empty
-            -# %img{src: "#{$img_dev_url}/1x1/", width: "1", height: "5", display: "block"}
-      -# %br/
+            -# %img{src: "#{$img_dev_url}/1x1/"}
       :erb
         Del registrate <a href="http://change.me" target="_blank">introductori</a> unidirectional su. Campo publicationes uso se, tres technic capital uno o. Del patre parola traducite se, union vices initialmente del da, traduction instruction anglo-romanic da con.
 %br/
