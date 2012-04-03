@@ -1,9 +1,7 @@
 %table{table_attrs, bgcolor: "#f0f0f0", width: $fix_width - ($gutter * 2) }
   %tr
     %td{td_attrs, center, width: "130", style: font_attrs}
-      %a{link_attrs}
-        %img{img_attrs, src: "#{$img_dev_url}article-pic.jpg", width: "130", height: "80", style: "border: solid 2px #{$border_primary_color};"}
-        -# more info
+      = partial :_article_pic
     %td{width: "20"}
       %img{src: "#{$img_dev_url}spacer.gif", width: "20", height: "1"}
     %td{td_attrs, style: font_attrs, width: ($fix_width - 200)}
