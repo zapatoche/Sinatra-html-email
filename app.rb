@@ -47,9 +47,10 @@ configure do
   $flex_width = "100%"
   $default_width = $flex_width
   $gutter = 25
-  $gutter_h = $gutter
+  $gutter_h = $gutter - 5
   $gutter_v = $gutter
   $inner_width = $fix_width - ($gutter * 2)
+  $news_modules_spacer = "15"
 
   #columns
   $col_1 = $fix_width

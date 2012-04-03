@@ -7,8 +7,8 @@
       - 3.times do |x|
         = partial :_news_module
         - unless x == 2
-          %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "15", style: "display: block;"}
-      %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "20", style: "display: block;"}
+          %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "#{$news_modules_spacer}", style: "display: block;"}
+      %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "#{$gutter_h}", style: "display: block;"}
 
 %table.newsletter{table_attrs, bgcolor: "#f0f0f0", style: "border-top: 1px solid #{$border_primary_color}", width: $fix_width}
   %tr
@@ -19,5 +19,5 @@
       - 2.times do |x|
         = partial :_news_module
         - unless x == 1
-          %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "15", style: "display: block;"}
-      %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "20", style: "display: block;"}
+          %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "#{$news_modules_spacer}", style: "display: block;"}
+      %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "#{$gutter_h}", style: "display: block;"}
