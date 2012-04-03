@@ -1,9 +1,5 @@
 %w{rubygems sinatra haml sass kramdown}.each {|libs| require libs}
 
-require 'rack-livereload'
-
-use Rack::LiveReload,  :min_delay => 500
-
 # Set Sinatra variables
 set :app_file, __FILE__
 set :root, File.dirname(__FILE__)
