@@ -64,7 +64,7 @@ configure do
   $img_def_dim = "200x200"
   $img_rythm = 110
   #links
-  $test_link = "http://test.com"
+  $test_link = "http://change.me"
 end
 
 # Helpers
