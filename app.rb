@@ -24,7 +24,7 @@ configure do
   $brand_highlight_secondary = "#ffffff"
   $brand_cta_color = "#ffbb00"
   $newsletter_bg_color = "#f0f0f0"
-  $copy_col = "#000000"
+  $copy_col = "#141414"
   $main_bg = "#ffffff"
   $wrapper_bg = "#000000"
   $hr_color = "#cccccc"
@@ -32,8 +32,8 @@ configure do
   $border_primary = "1px solid #{$border_primary_color}"
 
   #links
-  $header_link_primary = $brand_highlight_primary
-  $header_link_secondary = "#000000"
+  $header_col_primary = $brand_highlight_primary
+  $header_col_secondary = "#000000"
   $link_col = $brand_highlight_primary
   $link_inv_col = "#ffffff"
   $link_hover = $brand_col
