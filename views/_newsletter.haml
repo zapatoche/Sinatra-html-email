@@ -4,8 +4,12 @@
       %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "20", style: "display: block;"}
       /monthly
       = partial :_header_module
-      - 3.times do
+      - 3.times do |x|
         = partial :_news_module
+        -# - unless x == 2
+        -#   %br/
+        %br/
+      %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "20", style: "display: block;"}
 
 %table.newsletter{table_attrs, bgcolor: "#f0f0f0", style: "border-top: 1px solid #{$border_primary_color}", width: $fix_width}
   %tr
@@ -13,6 +17,9 @@
       %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "20", style: "display: block;"}
       /other
       = partial :_header_module
-      - 2.times do
+      - 2.times do |x|
         = partial :_news_module
+        -# - unless x == 1
+          %br/
+        %br/
       %img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "20", style: "display: block;"}

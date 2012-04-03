@@ -21,26 +21,31 @@ configure do
   $font_size = "12px"
   $font_weight = "normal"
   $line_height ="1.4"
+
   #colors
   $brand_col = "#1d6d0a"
   $brand_highlight_primary = "#e73f40"
   $brand_highlight_secondary = "#ffffff"
   $brand_cta_color = "#ffbb00"
-  $brand_link_highlight = $brand_highlight_primary
   $newsletter_bg_color = "#f0f0f0"
   $copy_col = "#000000"
-  $copy_inv_col = "#ffffff" 
-  $cta_link_col = "#ffffff"
-  $link_col = "blue"
-  $link_inv_col = "#ffffff"
-  $link_hover = $brand_col
-  $link_visited = "purple"
-  $link_active = $brand_col
   $main_bg = "#ffffff"
   $wrapper_bg = "#000000"
   $hr_color = "#cccccc"
   $border_primary_color = "#D3D3D3"
   $border_primary = "1px solid #{$border_primary_color}"
+
+  #links
+  $header_link_primary = $brand_highlight_primary
+  $header_link_secondary = "#000000"
+  $link_col = $brand_highlight_primary
+  $link_inv_col = "#ffffff"
+  $link_hover = $brand_col
+  $link_visited = "purple"
+  $link_active = $brand_col
+  $copy_inv_col = "#ffffff" 
+  $cta_link_col = "#ffffff"
+
   #layout
   $fix_width = 590
   $flex_width = "100%"
@@ -49,10 +54,12 @@ configure do
   $gutter_h = $gutter
   $gutter_v = $gutter
   $inner_width = $fix_width - ($gutter * 2)
+
   #columns
   $col_1 = $fix_width
   $col_2 = ($inner_width - $gutter_h) / 2
   $col_3 = ($inner_width - ($gutter_h * 2)) / 3
+
   #images
   $logo_height = 75
   $logo_width = 590
@@ -60,7 +67,7 @@ configure do
   $img_def_dim = "200x200"
   $img_rythm = 110
   #links
-  $test_link = "http://change.me"
+  $test_link = "http://test.com"
 end
 
 # Helpers
