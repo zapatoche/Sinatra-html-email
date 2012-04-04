@@ -1,7 +1,14 @@
+%img{src: "#{$img_dev_url}spacer.gif", width: "1", height: "25"}
 %table.social{table_attrs, bgcolor: $wrapper_bg, width: $fix_width}
   %tr
-    %td{right, bottom, bgcolor: $wrapper_bg, height: "40"}
-      %table.social{table_attrs, bgcolor: $wrapper_bg, width: "65" }
+    %td{right, bottom, bgcolor: $wrapper_bg, height: "15"}
+      %a{link_attrs, href: "http://www.youtube.com", style: "text-decoration: none;"}
+        %img{src: "#{$img_dev_url}youtube.png", width: "20", height: "15", alt: "YouTube", title: "YouTube", border: "0", style: "display: inline;"}/
+      %a{link_attrs, href: "http://www.facebook.com", style: "text-decoration: none;"}
+        %img{src: "#{$img_dev_url}twitter.png", width: "20", height: "15", alt: "YouTube", title: "facebook", border: "0", style: "display: inline;"}/
+      %a{link_attrs, href: "http://www.twitter.com", style: "text-decoration: none;"}
+        %img{src: "#{$img_dev_url}facebook.png", width: "20", height: "15", alt: "YouTube", title: "twitter", border: "0", style: "display: inline;"}/
+      -# %table.social{table_attrs, bgcolor: $wrapper_bg, width: "65" }
         %tr
           %td{right, middle, bgcolor: $wrapper_bg}
             %a{link_attrs, href: "http://www.youtube.com"}
